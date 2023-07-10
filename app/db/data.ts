@@ -51,7 +51,7 @@ export const data: Product[] = [{
     size: "",
     material: ""
 }, {
-    id: 4,
+    id: 5,
     title: "Product",
     price: 9.99,
     image: product,
@@ -60,7 +60,7 @@ export const data: Product[] = [{
     size: "",
     material: ""
 }, {
-    id: 5,
+    id: 6,
     title: "Product",
     price: 15.99,
     image: product,
@@ -70,15 +70,6 @@ export const data: Product[] = [{
     material: ""
 },
 {
-    id: 6,
-    title: "Product",
-    price: 9.99,
-    image: product,
-    description: "lorem ipsum dolor sit amet",
-    weight: "",
-    size: "",
-    material: ""
-}, {
     id: 7,
     title: "Product",
     price: 9.99,
@@ -98,6 +89,15 @@ export const data: Product[] = [{
     material: ""
 }, {
     id: 9,
+    title: "Product",
+    price: 9.99,
+    image: product,
+    description: "lorem ipsum dolor sit amet",
+    weight: "",
+    size: "",
+    material: ""
+}, {
+    id: 10,
     title: "Product",
     price: 9.99,
     image: product,

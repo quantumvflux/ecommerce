@@ -9,12 +9,14 @@ const Trending = () => {
       </h4>
       <div className="flex justify-center gap-2">
         {data.slice(0, 5).map((product) => (
-          <ProductCard
-            title={product.title}
-            image={product.image}
-            price={product.price}
-            id={product.id}
-          />
+          <div key={product.id}>
+            <ProductCard
+              title={product.title}
+              image={product.image}
+              price={product.price}
+              id={product.id}
+            />
+          </div>
         ))}
       </div>
     </div>

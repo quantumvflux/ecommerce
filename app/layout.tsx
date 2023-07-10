@@ -19,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} scrollbar-thin scrollbar-thumb-slate-400`}
+      >
         <Provider store={store}>
           <Nav />
           {children}

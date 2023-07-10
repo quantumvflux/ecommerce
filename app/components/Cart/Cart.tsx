@@ -1,9 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { useSelector, useDispatch } from "react-redux";
-import { RootState, AppDispatch } from "@/app/redux/store/store";
-import { removeFromCart } from "@/app/redux/store/cartSlice";
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/redux/store/store";
 import CartCard from "./CartCard/CartCard";
 
 interface Props {
@@ -13,7 +12,6 @@ interface Props {
 
 const Cart = ({ showCart, handleShow }: Props) => {
   const cartItems = useSelector((state: RootState) => state.cart.items);
-  const dispatch = useDispatch<AppDispatch>();
 
   const [transitionClass, setTransitionClass] = useState("translate-x-full");
 
@@ -34,10 +32,10 @@ const Cart = ({ showCart, handleShow }: Props) => {
       <div>
         <h4 className="text-center text-xl font-semibold p-4">Cart</h4>
       </div>
-      <div className="flex flex-col gap-4 w-11/12 m-auto justify-center">
+      <div className="scrollbar-thin scrollbar-thumb-inherit flex flex-col gap-4 w-11/12 mx-auto justify-start overflow-y-auto">
         {cartItems.map((item) => (
           <div key={item.id}>
-            <CartCard />
+            <CartCard quantity={item.quantity} product={item} />
           </div>
         ))}
       </div>

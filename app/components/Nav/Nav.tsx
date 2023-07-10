@@ -19,7 +19,7 @@ const Nav = () => {
         </h1>
       </Link>
       <div className="flex gap-4">
-        <div className="w-10 h-10 rounded-full bg-red-600 flex justify-center items-center">
+        <div className="w-10 h-10 rounded-full bg-red-500 hover:bg-red-600 transition-all flex justify-center items-center">
           <button onClick={handleShow}>
             <AiOutlineShoppingCart className="text-white h-6 w-6" />
           </button>
