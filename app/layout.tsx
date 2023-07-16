@@ -4,6 +4,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Provider } from "react-redux";
 import store from "./redux/store/store";
+import Footer from "./components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           <Nav />
           {children}
         </Provider>
+        <Footer />
       </body>
     </html>
   );
