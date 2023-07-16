@@ -1,19 +1,36 @@
 import { StaticImageData } from "next/image";
-import image1 from "./assets/wireless-earbuds.jpg"
-import image2 from "./assets/leather-wallet.jpg"
-import image3 from "./assets/cushion-set.jpg"
-import image4 from "./assets/facial-serum.jpg"
-import image5 from "./assets/camping-backpack.jpg"
-import image6 from './assets/gaming-mouse.jpg'
-import image7 from "./assets/floral-dress.jpg"
+import image1 from "./assets/wireless-earbuds.webp"
+import image2 from "./assets/leather-wallet.webp"
+import image3 from "./assets/cushion-set.webp"
+import image4 from "./assets/facial-serum.webp"
+import image5 from "./assets/camping-backpack.webp"
+import image6 from './assets/gaming-mouse.webp'
+import image7 from "./assets/floral-dress.webp"
 import image8 from "./assets/knife-set.webp"
 import image9 from "./assets/face-cleanser.webp"
-import image10 from './assets/yoga-mat.jpg'
-import image11 from './assets/bluetooth-speaker.jpg'
-import image12 from "./assets/man-sneaker.jpg"
-import image13 from './assets/office-desk.jpg'
-import image14 from './assets/body-lotion.jpg'
-import image15 from "./assets/camping-tent.jpg"
+import image10 from './assets/yoga-mat.webp'
+import image11 from './assets/bluetooth-speaker.webp'
+import image12 from "./assets/man-sneaker.webp"
+import image13 from './assets/office-desk.webp'
+import image14 from './assets/body-lotion.webp'
+import image15 from "./assets/camping-tent.webp"
+import image16 from "./assets/thermostat.webp"
+import image17 from "./assets/handbag.webp"
+import image18 from "./assets/led-lamp.webp"
+import image19 from "./assets/facial-serum.webp"
+import image20 from "./assets/dumbbell.webp"
+import image21 from "./assets/car-speaker.webp"
+import image22 from "./assets/classic-shirt.webp"
+import image23 from "./assets/candle-set.webp"
+import image24 from "./assets/face-mascara.webp"
+import image25 from "./assets/trekking-pole.webp"
+import image26 from "./assets/portable-speaker.webp"
+import image27 from "./assets/trench-coat.webp"
+import image28 from "./assets/cookware-set.webp"
+import image29 from "./assets/lip-balm.webp"
+import image30 from "./assets/cycling-helmet.webp"
+
+
 
 
 export interface Product {
@@ -194,5 +211,171 @@ export const data: Product[] = [
         weight: "3.5 kg",
         size: "Large",
         material: "Polyester"
-    }
+    },
+    {
+        id: 16,
+        title: "Smart Wi-Fi Thermostat",
+        price: 129.99,
+        image: image16,
+        description: "Control your home's temperature from anywhere with this smart Wi-Fi thermostat. It offers energy-saving features and intuitive app control.",
+        category: "electronics",
+        weight: "0.3 kg",
+        size: "Small",
+        material: "Plastic"
+    },
+    {
+        id: 17,
+        title: "Women's Stylish Handbag",
+        price: 79.99,
+        image: image17,
+        description: "Complete your outfit with this chic and versatile women's handbag. It features multiple compartments and a fashionable design.",
+        category: "fashion",
+        weight: "0.5 kg",
+        size: "Medium",
+        material: "Leather"
+    },
+    {
+        id: 18,
+        title: "LED Desk Lamp",
+        price: 39.99,
+        image: image18,
+        description: "Illuminate your workspace with this sleek LED desk lamp. It offers adjustable brightness, color temperature, and USB charging port.",
+        category: "home",
+        weight: "0.8 kg",
+        size: "Small",
+        material: "Metal"
+    },
+    {
+        id: 19,
+        title: "Hydrating Facial Sheet Mask Set",
+        price: 19.99,
+        image: image19,
+        description: "Treat your skin to deep hydration with this set of nourishing facial sheet masks. Each mask is infused with revitalizing ingredients for a radiant complexion.",
+        category: "beauty",
+        weight: "0.1 kg",
+        size: "Small",
+        material: "Fabric"
+    },
+    {
+        id: 20,
+        title: "Adjustable Dumbbell Set",
+        price: 249.99,
+        image: image20,
+        description: "Build strength and tone muscles with this adjustable dumbbell set. It allows you to customize your weight resistance for various exercises.",
+        category: "sports",
+        weight: "25 kg",
+        size: "Medium",
+        material: "Metal"
+    },
+    {
+        id: 21,
+        title: "Bluetooth Car Speakerphone",
+        price: 59.99,
+        image: image21,
+        description: "Stay connected while driving with this Bluetooth car speakerphone. It provides hands-free calling and high-quality audio for a safer and more enjoyable drive.",
+        category: "electronics",
+        weight: "0.2 kg",
+        size: "Small",
+        material: "Plastic"
+    },
+    {
+        id: 22,
+        title: "Men's Classic Oxford Shirt",
+        price: 49.99,
+        image: image22,
+        description: "Look sharp and sophisticated with this timeless men's classic Oxford shirt. It is made from premium cotton fabric and offers a comfortable fit.",
+        category: "fashion",
+        weight: "0.3 kg",
+        size: "Medium",
+        material: "Cotton"
+    },
+    {
+        id: 23,
+        title: "Scented Soy Candle Set",
+        price: 29.99,
+        image: image23,
+        description: "Create a relaxing ambiance with this set of scented soy candles. Each candle is hand-poured and offers a long-lasting and delightful fragrance.",
+        category: "home",
+        weight: "0.5 kg",
+        size: "Standard",
+        material: "Soy Wax"
+    },
+    {
+        id: 24,
+        title: "Volumizing Mascara",
+        price: 12.99,
+        image: image24,
+        description: "Achieve fuller lashes with this volumizing mascara. Its unique formula enhances volume, length, and curl for a dramatic eye look.",
+        category: "beauty",
+        weight: "0.05 kg",
+        size: "Small",
+        material: "Liquid"
+    },
+    {
+        id: 25,
+        title: "Trekking Pole Set",
+        price: 79.99,
+        image: image25,
+        description: "Conquer any trail with this durable and adjustable trekking pole set. It provides stability, support, and reduces strain on your joints during hiking adventures.",
+        category: "sports",
+        weight: "0.8 kg",
+        size: "Large",
+        material: "Aluminum"
+    },
+    {
+        id: 26,
+        title: "Portable Bluetooth Speaker",
+        price: 69.99,
+        image: image26,
+        description: "Take your music anywhere with this portable Bluetooth speaker. It delivers immersive sound, long battery life, and a compact design for easy portability.",
+        category: "electronics",
+        weight: "0.5 kg",
+        size: "Medium",
+        material: "Plastic"
+    },
+    {
+        id: 27,
+        title: "Women's Classic Trench Coat",
+        price: 129.99,
+        image: image27,
+        description: "Stay stylish and protected from the elements with this classic trench coat for women. It is crafted from water-resistant fabric and features a timeless design.",
+        category: "fashion",
+        weight: "1.2 kg",
+        size: "Large",
+        material: "Polyester"
+    },
+    {
+        id: 28,
+        title: "Stainless Steel Cookware Set",
+        price: 199.99,
+        image: image28,
+        description: "Upgrade your kitchen with this premium stainless steel cookware set. It includes a variety of pots, pans, and utensils for all your cooking needs.",
+        category: "home",
+        weight: "5.0 kg",
+        size: "Standard",
+        material: "Stainless Steel"
+    },
+    {
+        id: 29,
+        title: "Moisturizing Lip Balm Trio",
+        price: 9.99,
+        image: image29,
+        description: "Keep your lips hydrated and smooth with this moisturizing lip balm trio. Each balm is infused with nourishing ingredients and offers a hint of color.",
+        category: "beauty",
+        weight: "0.02 kg",
+        size: "Small",
+        material: "Balm"
+    },
+    {
+        id: 30,
+        title: "Cycling Helmet",
+        price: 59.99,
+        image: image30,
+        description: "Ensure your safety on the road with this high-quality cycling helmet. It features a lightweight and aerodynamic design for maximum comfort and protection.",
+        category: "sports",
+        weight: "0.3 kg",
+        size: "Medium",
+        material: "Polycarbonate"
+    },
+
 ];
