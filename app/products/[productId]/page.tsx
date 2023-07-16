@@ -23,7 +23,8 @@ const ProductId = () => {
     image: StaticImageData,
     weight: string,
     size: string,
-    material: string
+    material: string,
+    category: "electronics" | "fashion" | "home" | "beauty" | "sports"
   ) => {
     const newItem: Product = {
       id,
@@ -34,6 +35,7 @@ const ProductId = () => {
       weight,
       size,
       material,
+      category,
     };
     dispatch(addToCart(newItem));
   };
@@ -47,17 +49,18 @@ const ProductId = () => {
             <h2 className="text-center font-bold text-2xl pt-8 pb-4">
               {product.title}
             </h2>
-            <div className="flex justify-center gap-8">
+            <div className="flex flex-col md:flex-row items-center md:items-start md:justify-center gap-8 mb-8">
               <div className="relative h-96 w-80">
                 <Image
                   alt="Product"
                   src={product.image}
                   fill
                   style={{ objectFit: "cover" }}
+                  loading="lazy"
                 />
               </div>
-              <div className="w-1/4 flex flex-col">
-                <div>
+              <div className="w-11/12 md:w-1/4 flex flex-col">
+                <div className="mb-6">
                   <p className="text-md">{product.description}</p>
                   <p className="my-4 text-center">Quantity</p>
                   <QuantityCounter price={product.price} />
@@ -73,7 +76,8 @@ const ProductId = () => {
                       product.image,
                       product.size,
                       product.material,
-                      product.weight
+                      product.weight,
+                      product.category
                     );
                   }}
                   className="bg-red-600 hover:bg-red-500 transition-all hover:border-black hover:border-2 w-48 m-auto p-4 text-white rounded-full"
@@ -82,7 +86,7 @@ const ProductId = () => {
                 </button>
               </div>
             </div>
-            <div className="flex gap-4 justify-center">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-4 justify-center">
               <ProductInfo label="Weight" description={product.weight} />
               <ProductInfo label="Size" description={product.size} />
               <ProductInfo label="Material" description={product.material} />

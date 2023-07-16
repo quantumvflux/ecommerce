@@ -20,11 +20,8 @@ const CartCard = ({ product, quantity }: Props) => {
     dispatch(removeFromCart(product));
   };
 
-  console.log(prodQuantity);
-  console.log("quantity: ", quantity);
-
   return (
-    <div className="border-2 border-gray-400 flex w-full items-center">
+    <div className="border-2 border-gray-400 flex w-full ">
       <Link href={`/products/${product.id}`} className="flex items-center">
         <div className="h-32 w-32 relative">
           <Image
@@ -32,21 +29,25 @@ const CartCard = ({ product, quantity }: Props) => {
             fill
             alt="Product Cart"
             style={{ objectFit: "cover" }}
+            loading="lazy"
           />
         </div>
         <div className="p-4">
           <h5 className="mb-4 font-semibold">
-            {product.title} <span className="font-normal">x{}</span>
+            {product.title} <span className="font-normal">x{quantity}</span>
           </h5>
           <p>
             Total:
             <span className="font-semibold">
-              ${Number(product.price * quantity)}
+              $
+              {Number(product.price * quantity)
+                .toString()
+                .slice(0, 6)}
             </span>
           </p>
         </div>
       </Link>
-      <div className="m-auto text-2xl hover:bg-red-400 rounded-full p-2 transition-all hover:cursor-pointer hover:text-white">
+      <div className="m-auto text-2xl rounded-full w-1/4 hover:cursor-pointer">
         <BsFillTrashFill onClick={handleRemoveFromCart} />
       </div>
     </div>

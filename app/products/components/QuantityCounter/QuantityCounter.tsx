@@ -35,7 +35,9 @@ const QuantityCounter = ({ price }: Props) => {
           +
         </button>
       </div>
-      <p className="font-bold text-xl text-end">${price * quantity}</p>
+      <p className="font-bold text-xl text-end">
+        ${String(price * quantity).slice(0, 6)}
+      </p>
     </div>
   );
 };
