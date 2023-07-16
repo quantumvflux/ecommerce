@@ -19,11 +19,9 @@ const Nav = () => {
         </h1>
       </Link>
       <div className="flex items-center gap-6">
-        {/* <div className="w-10 h-10 rounded-full bg-red-500 hover:bg-red-600 transition-all flex justify-center items-center"> */}
         <button onClick={handleShow}>
           <BsFillCartFill className="text-black h-6 w-6" />
         </button>
-        {/* </div> */}
       </div>
       <Cart showCart={showCart} handleShow={handleShow} />
     </nav>
